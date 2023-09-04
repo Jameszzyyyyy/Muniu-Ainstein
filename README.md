@@ -5,7 +5,7 @@
 ---
 
 ## Directories
-- **Directory _[pca_normal_voxel:](./pca_normal_voxel)_** The following algorithms and principle are most basic ones in processing 3D Point Cloud Data
+- **Directory _[pca_normal_voxel:](./pca_normal_voxel)_** The following algorithms and principles are the most basic ones in processing 3D Point Cloud Data
     * **_Principal Components Analysis:_** Also Known as PCA, this is a data dimensionality 
     reduction technique, by using it we can remove unnecessary noise and reduce a lot of computation.
   
