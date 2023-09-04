@@ -11,7 +11,7 @@ from matplotlib.patches import Ellipse
 from scipy.stats import multivariate_normal
 from result_set import KNNResultSet, RadiusNNResultSet
 from sklearn.cluster import KMeans
-import  kdtree as kdtree
+import kdtree as kdtree
 
 plt.style.use('seaborn')
 
@@ -98,19 +98,19 @@ class Spectral(object):
         ##换算D矩阵
         self.D = np.diag(np.sum(self.W,axis=1))     #列相加,并转化为对角线矩阵
         self.L = self.D - self.W                 #拉普拉斯矩阵 L = D - W
-        #step3 算拉普拉斯L矩阵最小的K个特征向量记为V
+        #算拉普拉斯L矩阵最小的K个特征向量记为V
         ###方法一
         # eigval, eigvec = np.linalg.eigh(L)
         # features = np.asarray([eigvec[:,i] for i in range(self.__K)]).T
         ###方法二
         _, self.Y = scipy.linalg.eigh(self.L, eigvals=(0, 2))  # 特征值分解
-        #step4 把 N*k维 向量 进行K-means聚类
+        #把 N*k维 向量 进行K-means聚类
         # k_means = KMeans.K_Means(n_clusters=self.k)       #初始化kmeans
         # k_means.fit(self.Y)
         # result = k_means.predict(self.Y)
         sp_kmeans = KMeans(n_clusters=self.k).fit(self.Y)
         self.label = sp_kmeans.labels_
-        return  sp_kmeans.labels_
+        return sp_kmeans.labels_
 
     def predict(self, data):
         """
