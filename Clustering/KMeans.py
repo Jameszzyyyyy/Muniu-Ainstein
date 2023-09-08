@@ -5,6 +5,11 @@ import matplotlib.pyplot as plt
 from result_set import KNNResultSet, RadiusNNResultSet
 import kdtree as kdtree
 import sys
+
+# Command in terminal should look like:
+# python KMeans.py [filename] [num of cluster(k)] [color_1] [color_2] ... [color_k]
+# Example: python KMeans.py point.txt 4 red yellow blue green
+
 # 二维点云显示函数
 def Point_Show(point,color):
     x = []

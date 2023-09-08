@@ -12,6 +12,11 @@ import sys
 # 输出：
 #     eigenvalues：特征值
 #     eigenvectors：特征向量
+
+# Command in terminal should look like:
+# python pca_normal_voxel.py [filename] [neighbors_num] [mean/random] [leaf_size]
+# Example: python pca_normal_voxel.py ./modelnet40_normal_resampled/car/car_0204.txt 1000 mean 0.01
+
 def PCA(data, correlation=False, sort=True):
     mean = np.mean(np.asarray(data), axis=0)
     #中心化
@@ -151,3 +156,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
