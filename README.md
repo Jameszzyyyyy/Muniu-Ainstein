@@ -1,6 +1,6 @@
-# Muniu ｜ Ainstein
+# Muniu-Ainstein Internship
 
-### _This repository contains codes about basic algorithms in analyzing and processing 3D point cloud data_  
+### _This repository contains codes about basic algorithms in analyzing and processing data of 3D point cloud_  
 
 ---
 
