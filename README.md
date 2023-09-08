@@ -34,7 +34,7 @@
 
 
 - **_[Clustering:](./Clustering)_** The followings are algorithms for point-cloud-clustering, which is to classify each point 
-    into a cluster so that we can recognize the object.
+    into a cluster so that we can perform the object-recognization.
 
     * **_KMeans:_** It is a simple clustering method, which is generally used in the early stage of data analysis. 
     After selecting appropriate k, the data is classified, and then the characteristics of the data under different 
