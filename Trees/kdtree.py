@@ -232,22 +232,6 @@ def main():
         kdtree_knn_search(root, db_np, result_set, query)
     knn_time_sum += time.time() - begin_t
     print("build  %sms KNN  %sms" %(construction_time_sum*1000,knn_time_sum*1000))
-    #
-    # print(result_set)
-    #
-    # diff = np.linalg.norm(np.expand_dims(query, 0) - db_np, axis=1)
-    # nn_idx = np.argsort(diff)
-    # nn_dist = diff[nn_idx]
-    # print(nn_idx[0:k])
-    # print(nn_dist[0:k])
-    #
-    #
-    # print("Radius search:")
-    # query = np.asarray([0, 0, 0])
-    # result_set = RadiusNNResultSet(radius = 0.5)
-    # radius_search(root, db_np, result_set, query)
-    # print(result_set)
-
 
 if __name__ == '__main__':
     main()

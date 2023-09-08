@@ -78,21 +78,6 @@ if __name__ == '__main__':
         for j in range(k):
             if cat[i] == j:
                 cluster[j].append(x[i])
-        # if cat[i] == 0:
-        #     cluster[0].append(x[i])
-        # elif cat[i] == 1:
-        #     cluster[1].append(x[i])
-        # elif cat[i] == 2:
-        #     cluster[2].append(x[i])
-        # else:cluster[3].append(x[i])
-    # Point_Show(cluster[0], "red")
-    # Point_Show(cluster[1], "green")
-    # Point_Show(cluster[2], "blue")
-    # Point_Show(cluster[3], "yellow")
-    # for i in range(k):
-    #     Point_Show(cluster[i], sys.argv[3+i])
-    #     Point_Show(y,"red")
-    #     plt.show()
     
     #显示最终结果
     for i in range(k):

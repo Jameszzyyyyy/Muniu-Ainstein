@@ -4,7 +4,7 @@ import  numpy as np
 
 from result_set import  KNNResultSet,RadiusNNResultSet
 
-class Node:                          #节点，每一个数都是一个分支节点
+class Node:
     def __init__(self,key,value=-1):
         self.left = None
         self.right = None
