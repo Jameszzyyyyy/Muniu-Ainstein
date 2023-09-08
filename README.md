@@ -1,4 +1,4 @@
-# Muniu-Ainstein
+# Muniu ｜ Ainstein
 
 ### _This repository contains codes about basic algorithms in analyzing and processing 3D point cloud data_  
 
